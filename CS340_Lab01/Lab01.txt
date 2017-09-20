@@ -1,0 +1,3 @@
+Language 1: abb(aa)*
+Language 2: (ab)* | (ba)* | (ab)*a | (ba)*b
+Language 3: (a+)b(bb)*(a)*(bb)* | b(bb)*(a)*(bb)* | (a+)b(a)*(bb)* | ((a+)b(a)*b(a)*b(a*))+ | (bb)*(a)*(bb)*b

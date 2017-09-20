@@ -1,0 +1,5 @@
+Language 1: ac(ab)* | a(ab)*
+Language 2: (a*)((a+)b(a*))*
+Language 3: (a*|a*ba*b|ba*ba*)*
+Language 4: (c|a)*((b)*(a+c*)*)*
+Language 5: (a|b)(a|b)((a|b)(a|b)(a|b))*
