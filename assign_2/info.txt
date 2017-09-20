@@ -1,0 +1,14 @@
+Prob 3:
+Regexp A: (a|ab|abb|abbb)*
+Regexp B: (a+ab+abb+abbb)*
+B does not generate some strings in A
+  a
+  aa
+  ab
+  aaa
+B generates some strings not in A
+  aababbbbabbb
+  aaababbbbabbb
+  aababbbbbabbb
+  aabbabbbbabbb
+
