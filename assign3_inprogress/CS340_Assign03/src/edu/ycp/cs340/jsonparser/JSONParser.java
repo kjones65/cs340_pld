@@ -129,7 +129,7 @@ public class JSONParser {
 	private Node expect(Symbol symbol) {
 		Token tok = lexer.next();
 		if (tok.getSymbol() != symbol) {
-			throw new LexerException("Unexpected token " + tok + " (was expecting " + symbol + ")");
+			throw new ParserException("Unexpected token " + tok + " (was expecting " + symbol + ")");
 		}
 		return new Node(tok);
 	}
