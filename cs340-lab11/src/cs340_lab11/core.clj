@@ -59,7 +59,9 @@
 ;;   (swapsies [:xyzzy :plugh]) => [:plugh :xyzzy]
 ;;
 (defn swapsies [v]
-  "OHAI")
+  (let [e1 (first v)
+        e2 (second v)]
+    [e2 e1]))
 
 ;; Multiply each element in a three-element vector by a specified
 ;; factor, returning a vector as a result.
@@ -76,7 +78,10 @@
 ;;    (mulv3 [2 3 4] 2.5) => [5 7.5 10]
 ;;
 (defn mulv3 [vec fac]
-  "OHAI!")
+  (let [e1 (first vec)
+        e2 (second vec)
+        e3 (nth vec 2)]
+    [(* e1 fac) (* e2 fac) (* e3 fac)]))
 
 ;; Multiply each element in an arbitrary-length vector by a
 ;; specified factor, returning a vector as a result.
@@ -97,4 +102,4 @@
 ;; function which can multiply a single value by the specified factor.
 ;;
 (defn mulv [vec fac]
-  "KTHXBYE!")
+  (mapv (fn [vec-elem] (* fac vec-elem)) vec))
